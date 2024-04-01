@@ -1,8 +1,17 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import { Metadata } from "next";
 
 import { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "VideoVibe",
+  description: "A video-calling sharing platform",
+  icons: {
+    icon: "/icon.png",
+  },
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
