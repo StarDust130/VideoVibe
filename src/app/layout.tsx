@@ -9,8 +9,6 @@ export const metadata: Metadata = {
   description: "A video-calling sharing platform",
 };
 
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-dark-2 `}>{children}</body>
     </html>
   );
 }
