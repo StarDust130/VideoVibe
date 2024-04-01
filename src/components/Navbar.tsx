@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
@@ -13,16 +14,21 @@ const Navbar = () => {
           height={40}
           className="max-sm:size-10"
         />
-        <p className="text-[26px] font-extrabold text-white max-sm:hidden  ">VideoVibe</p>
+        <p className="text-[26px] font-extrabold text-white max-sm:hidden  ">
+          VideoVibe
+        </p>
       </Link>
 
       <div className="flex-between gap-5">
-        {/* Clerk */}
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
 
+        <SignedOut>
+        <SignedOut />
+        </SignedOut>
 
         <MobileNav />
-
-
       </div>
     </nav>
   );
