@@ -7,7 +7,7 @@ const Home = () => {
     hour: "2-digit",
     minute: "2-digit",
   });
-  const date = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+  const date = new Intl.DateTimeFormat("en-IN", { dateStyle: "full" }).format(
     now
   );
 
