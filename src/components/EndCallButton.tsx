@@ -52,7 +52,7 @@ const EndCallButton = () => {
               <AlertDialogAction
                 onClick={async () => {
                   await call.endCall();
-                  router.push("/");
+                  router.push("/home");
                 }}
                 className="bg-red-500 hover:bg-red-600 font-extrabold"
               >
