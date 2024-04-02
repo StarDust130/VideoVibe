@@ -7,7 +7,7 @@
   <h1>🌐 Live Link</h1>
   <img src="src/app/icon.png" alt="VideoVibe Logo" style="max-width: 100%;">
   
- # [SEE LIVE]()
+ ###  [SEE LIVE]()
   
   <h1>🛠️ Tech Stack</h1>
   <ul>
